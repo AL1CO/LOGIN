@@ -30,6 +30,7 @@ body {
 .tekst {
   color: rgb(255, 149, 0);
   margin-top: 50px;
+  font-size: 36px;
 }
 .con {
   margin: 0 auto;
