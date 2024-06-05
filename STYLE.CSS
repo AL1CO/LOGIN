@@ -17,6 +17,11 @@ body {
 #password {
   height: 200px;
 }
+
+.tekst {
+  color: rgb(255, 149, 0);
+  margin-top: 50px;
+}
 .con {
   margin: 0 auto;
   max-width: 260px;
