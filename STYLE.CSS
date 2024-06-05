@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("./IMG/bacraundcolor.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+.con {
+  margin: 0 auto;
+  max-width: 260px;
+  padding-top: 50px;
+}
+input {
+  display: block;
+  margin: 10px 0 50px;
+  width: 100%;
+  padding: 10px 20px;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+}
+button {
+  padding: 10px 20px;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  width: 100%;
+  border: 2px solid rgb(255, 255, 255);
+  background-color: transparent;
+  cursor: pointer;
+  transition: 1s;
+}
+button:hover {
+  background-color: #fff;
+  color: brown;
+  border: 0;
+}

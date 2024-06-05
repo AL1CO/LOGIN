@@ -4,18 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>20-dars</title>
+    <link rel="ICON" href="./IMG/Hacker_logo_2-removebg-preview.png" />
+    <link rel="stylesheet" href="./STYLE.CSS" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>GURUHGA A`ZO BO`LISH</title>
   </head>
   <body>
-    <form action="" method="get">
+    <form action="" method="get" class="con">
       <label for="fname">Ismingiz: </label>
       <input id="fname" type="text" />
-      <label for="email">Email: </label>
-      <input id="email" type="email" />
-      <label for="password">Parol: </label>
-      <input id="password" type="password" />
-      <button onclick="alicho()" type="submit">Submit</button>
+      <label for="email">Telefon raqamingiz: </label>
+      <input id="email" type="tel" />
+      <label for="password"
+        >Nima sababtan bizni saytimizga kirmoqchisiz?:
+      </label>
+      <input id="password" type="text" />
+      <button onclick="alicho()" type="submit">ARIZA YUBORISH</button>
     </form>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
@@ -44,7 +48,15 @@
           }),
         };
         $.ajax(settings).done(function (response) {
-          alert("ARIZANGIZ QABUL QILINDI TEZ O`RADA ALOQAGA CHIQAMIZ");
+          alert(
+            "BIZNI SAYTGA KIRGANINGIZ XAQIDA ALICHO XABAR TOPTI AGARDA SIZGA QIZIQIB QO`LSA SIZGA ALOQAGA CHIQADI"
+          );
+          Swal.fire({
+            title: "QABUL QILINDI",
+            text: "SAYTGA KIRILMOQDA",
+            icon: "success",
+          });
+
           window.location.href = "https://qizil.netlify.app/";
         });
         document.getElementById("fname").value = "";
