@@ -9,9 +9,9 @@ body {
   background-size: cover;
   color: rgb(255, 255, 255);
   text-align: center;
-  height: 200vh;
+  height: 110vh;
   padding-bottom: 200px;
-  background-position: center;
+  background-position: bottom;
 }
 .con {
   margin: 0 auto;
@@ -23,8 +23,11 @@ input {
   margin: 10px 0 50px;
   width: 100%;
   padding: 10px 20px;
-  color: rgb(0, 0, 0);
+  color: #ffffff;
   font-size: 20px;
+  background-color: #ffffff99;
+  outline: black;
+  border: 1px solid;
 }
 button {
   padding: 10px 20px;
