@@ -14,6 +14,7 @@ body {
   height: 100%;
   font-family: "Orbitron", sans-serif;
 }
+
 #password {
   display: block;
   margin: 10px 0 50px;
@@ -25,6 +26,7 @@ body {
   outline: black;
   border: 2px solid;
   height: 200px;
+  resize: none;
 }
 
 .tekst {
