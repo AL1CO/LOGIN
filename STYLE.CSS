@@ -4,14 +4,10 @@
   box-sizing: border-box;
 }
 body {
-  background-image: url("./IMG/bacraundcolor.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
   color: rgb(255, 255, 255);
   text-align: center;
-  height: 110vh;
-  padding-bottom: 200px;
   background-position: bottom;
+  background-color: rgb(255, 0, 0);
 }
 .con {
   margin: 0 auto;
@@ -25,9 +21,9 @@ input {
   padding: 10px 20px;
   color: #ffffff;
   font-size: 20px;
-  background-color: #ffffff99;
+  background-color: transparent;
   outline: black;
-  border: 1px solid;
+  border: 2px solid;
 }
 button {
   padding: 10px 20px;
