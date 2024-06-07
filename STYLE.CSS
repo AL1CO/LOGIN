@@ -18,14 +18,14 @@ body {
 
 #password {
   display: block;
-  margin: 20px 0 50px;
+  margin: 20px 0 0px;
   width: 100%;
   padding: 10px 20px;
   color: #ffffff50;
   font-size: 20px;
   background-color: #00000050;
   outline: none;
-  /* border: 1px solid #ffffff50; */
+  border: 2px solid #ffffff50;
   height: 100px;
   resize: none;
   scrollbar-width: thin;
@@ -33,7 +33,7 @@ body {
 }
 
 .tekst {
-  color: rgb(255, 149, 0);
+  color: rgb(255, 255, 255);
   margin-top: 50px;
   font-size: 36px;
 }
@@ -63,21 +63,30 @@ input[type="tel"]:focus {
   background-color: #ffffff50;
 }
 button {
-  padding: 10px 20px;
-  color: #ff9100;
-  font-size: 20px;
+  padding: 10px 0;
+  color: #ffffff50;
+  font-size: 18px;
   width: 100%;
-  /* border: 2px solid #ff0000; */
+  border: 2px solid #ffffff50 !important;
   background-color: transparent;
   cursor: pointer;
-  transition: 1s;
+  transition: 0.3s;
   margin-bottom: 80px;
-  /* border-top: 0; */
-  border: 0;
+  border-top: 2px solid transparent !important;
+  position: relative;
+  top: 0px;
+  height: 70px;
+  font-family: "Orbitron", sans-serif;
 }
 button:hover {
   background-color: #000000;
   color: red;
-  /* border: 2px solid transparent; */
-  border-top: 0;
+  border: 2px solid transparent !important;
+  position: relative;
+  height: 100px !important;
+}
+@media only screen and (max-width: 500px) {
+  button:hover {
+    top: -100px;
+  }
 }

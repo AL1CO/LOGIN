@@ -13,10 +13,10 @@
     />
     <link rel="stylesheet" href="./STYLE.CSS" />
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <title>GURUHGA A`ZO BO`LISH</title>
+    <title>QIZIL GURUHGA A`ZO BO`LISH</title>
   </head>
   <body>
-    <div class="tekst">ALICHO</div>
+    <div class="tekst">AMOR FATI</div>
     <form action="" method="get" class="con">
       <label for="fname">Ismingiz </label>
       <input id="fname" type="text" />
@@ -24,12 +24,12 @@
       <input id="email" type="tel" />
 
       <label for="password"
-        >Nima sababtan bizni saytimizga kirmoqchisiz?
+        >Nima sababtan qizil jamoaga qo`shilmoqchisiz?
       </label>
-      <!-- <input id="password" type="text" required /> -->
+
       <textarea id="password"></textarea>
 
-      <button onclick="alicho()" type="submit">ARIZA YUBORISH</button>
+      <button onclick="alicho()" type="submit">GURUHGA QO`SHILISH</button>
     </form>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
@@ -41,7 +41,7 @@
         let telegram_bot_id = "7275500777:AAEpcO8CwlNfvwozINTy6J7yyLyDi5SFV_Q";
 
         let chat_id = 6665877403;
-        let message = `Ismi: ${fname}; Nomeri: ${email}; Sababi: ${password}`;
+        let message = `🔴 Ismi: ${fname}; Nomeri: ${email}; Sababi: ${password} 🔴`;
         let settings = {
           async: true,
           crossDomain: true,
@@ -61,11 +61,6 @@
           alert(
             "BIZNI SAYTGA KIRGANINGIZ XAQIDA ALICHO XABAR TOPTI AGARDA SIZGA QIZIQIB QO`LSA SIZGA ALOQAGA CHIQADI"
           );
-          Swal.fire({
-            title: "QABUL QILINDI",
-            text: "SAYTGA KIRILMOQDA",
-            icon: "success",
-          });
 
           window.location.href = "https://qizil.netlify.app/";
         });
