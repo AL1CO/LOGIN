@@ -70,7 +70,7 @@ button {
   border: 2px solid #ffffff50 !important;
   background-color: transparent;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.2s;
   margin-bottom: 80px;
   border-top: 2px solid transparent !important;
   position: relative;
@@ -84,9 +84,4 @@ button:hover {
   border: 2px solid transparent !important;
   position: relative;
   height: 100px !important;
-}
-@media only screen and (max-width: 500px) {
-  button:hover {
-    top: -100px;
-  }
 }
