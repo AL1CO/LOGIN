@@ -15,7 +15,13 @@ body {
   font-family: "Orbitron", sans-serif;
   scrollbar-color: rgb(0, 0, 0) #ffffff50;
 }
-
+label {
+  color: #ffffff50;
+  transition: 1s;
+  &:hover {
+    color: #fff;
+  }
+}
 #password {
   display: block;
   margin: 20px 0 0px;
@@ -25,17 +31,25 @@ body {
   font-size: 20px;
   background-color: #00000050;
   outline: none;
-  border: 2px solid #ffffff50;
+  border: 0;
   height: 100px;
   resize: none;
   scrollbar-width: thin;
   border-radius: 10px 10px 0 0;
+  transition: 1s;
+  &:hover {
+    color: #fff;
+  }
 }
 
 .tekst {
   color: rgb(255, 255, 255);
   margin-top: 50px;
   font-size: 36px;
+  transition: 1s;
+}
+.tekst:hover {
+  color: red;
 }
 .con {
   margin: 0 auto;
@@ -53,6 +67,9 @@ input {
   outline: black;
   border: 0;
   border-radius: 10px 10px 0 0;
+  &:hover {
+    color: #fff;
+  }
 }
 input[type="text"]:focus {
   border: 0px;
@@ -62,26 +79,27 @@ input[type="tel"]:focus {
   border: 0px;
   background-color: #ffffff50;
 }
+#password:focus {
+  border: 0px;
+  background-color: #ffffff50;
+}
 button {
   padding: 10px 0;
   color: #ffffff50;
   font-size: 18px;
   width: 100%;
-  border: 2px solid #ffffff50 !important;
-  background-color: transparent;
+  background-color: #00000050;
   cursor: pointer;
   transition: 0.2s;
   margin-bottom: 80px;
-  border-top: 2px solid transparent !important;
-  position: relative;
-  top: 0px;
   height: 70px;
   font-family: "Orbitron", sans-serif;
+  margin-top: 20px;
+  border: 0;
+  transition: 1s;
 }
 button:hover {
-  background-color: #000000;
+  background-color: transparent;
   color: red;
-  border: 2px solid transparent !important;
-  position: relative;
-  height: 100px !important;
+  border: 0;
 }
